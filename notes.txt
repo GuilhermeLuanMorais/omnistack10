@@ -1,0 +1,23 @@
+Para criar estrutura backend:
+yarn init -y
+yarn add express
+
+rodar app: node index.js
+
+monitar alterações e atualizar: yarn add nodemon -D
+Adicionar no package.json para ficar como "yarn dev"
+ "scripts": {
+    "dev": "nodemon index.js"
+  },
+
+---INFOS----
+
+- Conceitos Restful
+Query Params: request.query (Filtros, ordenação, paginação, ...)
+Route Params: request.params (Identificar um recurso na alteração ou remoção)
+Body: request.body (Dados para criação ou alteração de um registro
+
+
+yarn.lock - armazena cache dos pacotes
+
+arrow function = () => {}
