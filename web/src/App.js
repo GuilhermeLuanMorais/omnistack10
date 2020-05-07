@@ -1,25 +1,57 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import './global.css';
 import './App.css';
+import './Sidebar.css';
+import './Main.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div id="app">
+     <aside>
+      <string>Cadastrar</string>
+      <form>
+        <div class="input-block">
+          <label htmlFor="Usuário do Github"></label>
+          <input name="github_username" id="github_username" required />
+        </div>
+      
+        <div class="input-block">
+          <label htmlFor="techs"></label>
+          <input name="techs" id="techs" required />
+        </div>
+
+        <div className="input-group">
+          <div class="input-block">
+            <label htmlFor="latitude"></label>
+            <input name="latitude" id="latitude" required />
+          </div>
+
+          <div class="input-block">
+            <label htmlFor="longitude"></label>
+            <input name="longitude" id="longitude" required />
+          </div>
+        </div>
+        
+      </form>
+     </aside>
+
+     <main>
+      <ul>
+        <li className="dev-item">
+          <header>
+            <img src=""></img>
+            <div className="user-info">
+              <strong>Gagazo</strong>
+              <span>ReactJS, React native, Node.js</span>
+            </div>
+          </header>
+          <p>CTO na </p>
+          <a href="">Acessar perfil no github</a>
+        </li>
+      </ul>
+     </main>
+   </div>
   );
 }
 
