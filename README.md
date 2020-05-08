@@ -1,1 +1,1 @@
-# semanaomnistack10
+Projeto de referência usando React e Node
