@@ -1,3 +1,10 @@
+3 CONCEITOS REACT:
+- Componente - Bloco isolado de HTML, CSS e JS, o qual não interfere no restante aplicação
+- Estado - Infos mantidas pelo componente (Lembrar imutabilidade)
+- Propriedade: Infos que um componente Pai passa para o componente filho
+
+-------------------------
+
 Para criar estrutura backend:
 yarn init -y
 yarn add express
